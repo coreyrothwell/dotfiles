@@ -1,0 +1,12 @@
+[color]
+	ui = true
+[user]
+	name = Corey Rothwell
+	email = corey@ehawaii.gov
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+[push]
+	default = simple
