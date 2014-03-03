@@ -6,6 +6,8 @@ au BufRead,BufNewFile *.php set ft=html
 "au BufRead,BufNewFile *.coffee set tabstop=2 shiftwidth=2
 au BufNewFile,BufReadPost *.coffee setl tabstop=2 shiftwidth=2 expandtab
 "let g:syntastic_auto_loc_list=1
+"let g:solarized_termcolors=256
+"colorscheme solarized
 colorscheme molokai
 let g:rehash256 = 1
 
