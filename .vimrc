@@ -9,13 +9,15 @@ au BufNewFile,BufReadPost *.coffee setl tabstop=2 shiftwidth=2 expandtab
 "let g:solarized_termcolors=256
 "colorscheme solarized
 colorscheme molokai
-let g:rehash256 = 1
+"let g:rehash256 = 1
 
-
+"syntax enable
+"set background=dark
+"colorscheme solarized
 
 "set hlsearch
+set nohlsearch
 set ignorecase
-set background=dark
 set ruler
 set tabstop=4
 set shiftwidth=4
@@ -24,7 +26,6 @@ set autoindent
 set smartindent
 set cindent
 set expandtab
-set ic
 set laststatus=4
 set t_Co=256
 set cursorline
@@ -34,11 +35,17 @@ set showmatch
 set nobackup
 set noswapfile
 set nowritebackup
-set wildignore+=*.o,*.obj,.git,**/bower_components/*,**/node_modules/*
+set wildmode=longest,list
+set wildignore+=*.o,*.obj,.git,**/bower_components/*,**/node_modules/*,**/dist/**
 
 :command NT NERDTreeToggle
 :command FL CommandTFlush
-"autocmd VimEnter * NERDTree
+:command W w
 
 let mapleader=","
 
+" Status Line
+set laststatus=2
+set statusline+=%f\
+set statusline+=%=%1*%y%*%*\
+set statusline+=%=%10([%l/%L,%c,%p%%]%)\
