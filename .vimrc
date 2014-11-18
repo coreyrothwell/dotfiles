@@ -6,14 +6,13 @@ au BufRead,BufNewFile *.php set ft=html
 "au BufRead,BufNewFile *.coffee set tabstop=2 shiftwidth=2
 au BufNewFile,BufReadPost *.coffee setl tabstop=2 shiftwidth=2 expandtab
 "let g:syntastic_auto_loc_list=1
+
 "let g:solarized_termcolors=256
+"let g:solarized_termtrans = 1
+"set background=dark
 "colorscheme solarized
 colorscheme molokai
 "let g:rehash256 = 1
-
-"syntax enable
-"set background=dark
-"colorscheme solarized
 
 "set hlsearch
 set nohlsearch
@@ -46,6 +45,6 @@ let mapleader=","
 
 " Status Line
 set laststatus=2
-set statusline+=%f\
-set statusline+=%=%1*%y%*%*\
-set statusline+=%=%10([%l/%L,%c,%p%%]%)\
+set statusline+=%f
+set statusline+=%=%1*%y%*%*
+set statusline+=%=%10([%l/%L,%c,%p%%]%)
